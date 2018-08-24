@@ -13,16 +13,16 @@ public class PlayerAi : MonoBehaviour {
 	void Update () {
         if (side)
         {
-            transform.Translate(transform.right * Time.deltaTime * 9.5f);
-            if (transform.position.x > 4.3)
+            transform.Translate(transform.right * Time.deltaTime * 6f);
+            if (transform.position.x > 1.6)
             {
                 side = false;
             }
         }
         else
         {
-            transform.Translate(-transform.right * Time.deltaTime * 9.5f);
-            if (transform.position.x < -4.3)
+            transform.Translate(-transform.right * Time.deltaTime * 6f);
+            if (transform.position.x < -1.6)
             {
                 side = true;
             }

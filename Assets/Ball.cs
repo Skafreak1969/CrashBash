@@ -20,19 +20,19 @@ public class Ball : MonoBehaviour {
             startTime -= Time.deltaTime;
             if (startTime<=0)
             {
-                rigid.AddForce(new Vector3(-5f, 0, -10f), ForceMode.Impulse);
+                rigid.AddForce(new Vector3(-0.05f, 0, -0.2f), ForceMode.Impulse);
                 start = true;
             }
         }
         if (start)
         {
-            if (rigid.velocity.z < 2 )
+            if (rigid.velocity.z < 1 )
             {
-                rigid.AddForce(new Vector3(0, 0, -2f));
+                rigid.AddForce(new Vector3(0, 0, -1f));
             }
-            if (rigid.velocity.x < 2)
+            if (rigid.velocity.x < 1)
             {
-                rigid.AddForce(new Vector3(-2f, 0, 0));
+                rigid.AddForce(new Vector3(-1f, 0, 0));
             }
         }
     }
@@ -41,7 +41,7 @@ public class Ball : MonoBehaviour {
     {
         startTime = 2f;
         start = false;
-        transform.position = new Vector3(0.19f, 0.24f, -5);
+        transform.position = new Vector3(0, 0.01f, 0);
         rigid.velocity = new Vector3(0, 0, 0);
     }
 }

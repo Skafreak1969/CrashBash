@@ -27,7 +27,7 @@ public class PlayerDrag : MonoBehaviour {
     {
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, 0, screenPoint.z);
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
-        if (curPosition.x<4.3&&curPosition.x>-4.3)
+        if (curPosition.x<1.6&&curPosition.x>-1.6)
         {
             transform.position = curPosition;
         }
