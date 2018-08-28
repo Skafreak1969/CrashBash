@@ -45,7 +45,7 @@ public class Ball : MonoBehaviour {
     {
         startTime = 2f;
         start = false;
-        transform.position = new Vector3(0, 0.01f, 0);
+        transform.localPosition = new Vector3(0, 0.01f, 0);
         rigid.velocity = new Vector3(0, 0, 0);
     }
 

@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CrashBash.unity
+    guid: ec0bc6c0c7d0d46458a05e6de11df00f
+  m_configObjects: {}
