@@ -18,6 +18,10 @@ public class DeathTriggers : MonoBehaviour {
             {
                 scores.SumarAi();
             }
+            if (identifier == 3)
+            {
+                
+            }
             Ball ballScript = other.GetComponent<Ball>();
             ballScript.RestartBall();
         }
