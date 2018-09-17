@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAi : MonoBehaviour {
     private bool side;
 
-    private float speed = 1.5f;
+    private float speed = 2;
 
     [SerializeField]
     private GameObject bola;
