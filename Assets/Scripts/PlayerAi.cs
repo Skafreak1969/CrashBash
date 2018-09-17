@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerAi : MonoBehaviour {
     private bool side;
+
+    private float speed = 1.5f;
+
+    [SerializeField]
+    private GameObject bola;
+
 	// Use this for initialization
 	void Start () {
         side = true;
@@ -11,7 +17,7 @@ public class PlayerAi : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (side)
+        /*if (side)
         {
             transform.Translate(transform.right * Time.deltaTime * 6f);
             if (transform.localPosition.x > 0.3f)
@@ -26,7 +32,8 @@ public class PlayerAi : MonoBehaviour {
             {
                 side = true;
             }
-        }
-        
-	}
+        }*/
+        transform.position = Vector3.Lerp( transform.position, new Vector3 (bola.transform.position.x, transform.position.y, transform.position.z), Time.deltaTime * speed);
+
+    }
 }

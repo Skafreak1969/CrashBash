@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour {
             startTime -= Time.deltaTime;
             if (startTime<=0)
             {
-                rigid.AddForce(new Vector3(-0.05f, 0, -0.2f), ForceMode.Impulse);
+                rigid.AddForce(new Vector3(-0.05f, 0, -1f), ForceMode.Impulse);
                 start = true;
             }
         }
