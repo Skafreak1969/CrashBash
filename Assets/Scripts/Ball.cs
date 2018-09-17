@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour {
-    Rigidbody rigid;
-    bool start;
-    float startTime;
+    private Rigidbody rigid;
+    private bool start;
+    private float startTime;
 	// Use this for initialization
 	void Start () {
         rigid = gameObject.GetComponent<Rigidbody>();

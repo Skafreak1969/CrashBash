@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathTriggers : MonoBehaviour {
-    [SerializeField] GuiScores scores;
-    [SerializeField] int identifier;
-	// Use this for initialization
-	void Start() { 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    [SerializeField] private GuiScores scores;
+    [SerializeField] private int identifier;
 
     void OnTriggerEnter(Collider other)
     {

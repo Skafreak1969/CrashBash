@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangePlayer : MonoBehaviour {
-    [SerializeField] GameObject player;
-	// Use this for initialization
+    [SerializeField]
+    private GameObject player;
+
 	void Start () {
         CambiarScript(false);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void CambiarScript(bool valor)
     {

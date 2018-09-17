@@ -348,6 +348,7 @@
   <ItemGroup>
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\iOS\Vuforia.UnityExtensions.iOS.XML" />
+    <None Include="Assets\Scripts\surface.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\RealidadAumentada.xml" />
     <None Include="Assets\Vuforia\Editor\Scripts\Vuforia.UnityExtensions.Editor.XML" />
     <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
@@ -363,7 +364,6 @@
     <None Include="Assets\license_3rdpartynotice.txt" />
     <None Include="Assets\link.xml" />
     <None Include="Assets\readme_SDK.txt" />
-    <None Include="Assets\surface.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -4,14 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GuiScores : MonoBehaviour {
-    [SerializeField] Text scorePlayerTxt;
-    [SerializeField] Text scoreAiTxt;
-    int scorePlayer;
-    int scoreAi;
-    // Use this for initialization
-    void Start () {
-		
-	}
+    [SerializeField] private Text scorePlayerTxt;
+    [SerializeField] private Text scoreAiTxt;
+    private int scorePlayer;
+    private int scoreAi;
 
     public void SumarPlayer()
     {
@@ -23,7 +19,6 @@ public class GuiScores : MonoBehaviour {
         scoreAi++;
     } 
 	
-	// Update is called once per frame
 	void Update () {
         scorePlayerTxt.text = scorePlayer.ToString();
         scoreAiTxt.text = scoreAi.ToString();

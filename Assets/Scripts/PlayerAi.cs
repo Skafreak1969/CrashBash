@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAi : MonoBehaviour {
-    bool side;
+    private bool side;
 	// Use this for initialization
 	void Start () {
         side = true;
